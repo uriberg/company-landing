@@ -1,0 +1,27 @@
+*, *::before, *::after { /*the normal universal selector(without pseudo elements) only affects the normal elements. so to avoid undesired behaviour, we mention the pseudo elements too */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; /*this makes the box-sizing property to be inherited(by default it's not inherited) */
+}
+
+html {
+  /*this defines what 1rem is*/
+  font-size: 62.5% !important; /*this changes the root font-size !!  1rem = 10px because 10px/16px = 62.5%*/
+  overflow: auto;
+
+  @media only screen and(max-width: 600px)  {
+    font-size: 50% !important;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  overflow: auto !important;
+  font-size: inherit !important;
+
+  @media only screen and (max-width: 600px) {
+    padding: 0;
+  }
+
+}
