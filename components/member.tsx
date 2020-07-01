@@ -1,5 +1,5 @@
 import React from 'react';
-import 'lazysizes';
+import LazyLoad from 'react-lazyload';
 
 type Props = {
     imgSrc: string,
@@ -10,7 +10,7 @@ type Props = {
 
 const Member = ({imgSrc, firstname, lastname, role}: Props) => (
     <div className="member">
-        <div><img data-src={`${imgSrc}?img=${firstname}`} alt="" className="lazyload member__img" loading="lazy"/></div>
+        <div><LazyLoad><img src={`${imgSrc}?img=${firstname}`} alt="" className="member__img"/></LazyLoad></div>
         <div className="member__text">
             <div className="member__name">{firstname} {lastname}</div>
             <div className="member__role">{role}</div>
