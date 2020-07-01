@@ -8,7 +8,7 @@
   }
 
   @media only screen and(max-width: 900px){
-    padding: 4rem 5rem 7rem 7rem;
+    padding: 2rem 5rem 7rem 7rem;
   }
 
   &__url {
@@ -16,7 +16,7 @@
     margin-bottom: 12rem;
 
     @media only screen and (max-width: 1200px) {
-      margin-bottom: 9rem;
+      margin-bottom: 5rem;
     }
   }
 
@@ -43,7 +43,7 @@
     }
 
     &:not(:last-child) {
-      margin-bottom: 7rem;
+      margin-bottom: 5rem;
     }
   }
 }
