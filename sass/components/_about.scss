@@ -8,7 +8,11 @@
   }
 
   @media only screen and(max-width: 900px){
-    padding: 2rem 5rem 5rem 5rem;
+    padding: 2rem 5rem 10rem 5rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding-bottom: 5rem;
   }
 
   &__url {
