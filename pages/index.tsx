@@ -18,8 +18,6 @@ class Home extends React.Component<HomeProps> {
         for(let i = 0; i < uniques.length; i++){
             staff.push(res[uniques[i]]);
         }
-        //console.log(res);
-        console.log(staff);
         return {staff: staff};
     }
 

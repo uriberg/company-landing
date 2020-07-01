@@ -1,10 +1,5 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import {about} from '../constants/about';
-
-type Props = {
-    children?: ReactNode
-    title?: string
-}
 
 const About = () => (
     <div className="about">
