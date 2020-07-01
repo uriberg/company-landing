@@ -1,0 +1,49 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 22rem 10rem 10rem;
+
+  @media only screen and(max-width: 1200px){
+    padding: 6rem 10rem 10rem 5rem;
+  }
+
+  @media only screen and(max-width: 900px){
+    padding: 4rem 5rem 7rem 7rem;
+  }
+
+  &__url {
+    font-size: 2.5rem;
+    margin-bottom: 12rem;
+
+    @media only screen and (max-width: 1200px) {
+      margin-bottom: 9rem;
+    }
+  }
+
+  &__headline {
+    font-size: 5rem;
+    margin-bottom: 8rem;
+
+    @media only screen and (max-width: 1200px){
+      font-size: 4.5rem;
+    }
+  }
+
+  &__par {
+    &--headline {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    &--text{
+      font-size: 1.5rem;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 7rem;
+    }
+  }
+}

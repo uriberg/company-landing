@@ -6,9 +6,14 @@ type Props = {
 }
 
 const Staff = ({data}: Props) => (
-    <div>
+    <div className="staffList">
         {data.map((member: any, index) => {
-            return <Member lastname={member.lastname} key={index}/>
+            return <Member
+                    imgSrc={member.avatar}
+                    firstname={member.firstname}
+                    lastname={member.lastname}
+                    role={member.job}
+                    key={index}/>
         })}
     </div>
 );

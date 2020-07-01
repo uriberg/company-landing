@@ -27,10 +27,10 @@ class Home extends React.Component<HomeProps> {
 
     return (
         <>
-          <div className="about">
+          <div className="aboutSection">
               <About/>
           </div>
-            <div className="staff">
+            <div className="staffSection">
                 <Staff data={this.props.staff}/>
             </div>
         </>
